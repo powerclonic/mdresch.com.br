@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Portfólio",
     subtitle: "Vue.js 3 + Vuetify",
-    text: "O site no quak você está agora",
+    text: "O site no qual você está agora",
     repoLink: "https://github.com/powerclonic/mdresch.com.br",
     siteLink: "https://mdresch.com.br",
   },
