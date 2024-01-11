@@ -7,11 +7,13 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    CardProject: typeof import('./src/components/CardProject.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconButton: typeof import('./src/components/IconButton.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheHeader: typeof import('./src/components/TheHeader.vue')['default']
     TheLanguages: typeof import('./src/components/TheLanguages.vue')['default']
+    TheMessage: typeof import('./src/components/TheMessage.vue')['default']
     TheProjects: typeof import('./src/components/TheProjects.vue')['default']
     TheResume: typeof import('./src/components/TheResume.vue')['default']
     TheSocials: typeof import('./src/components/TheSocials.vue')['default']

@@ -6,9 +6,11 @@
         <TheResume />
         <TheStack />
         <TheLanguages />
+        <TheProjects />
+        <TheMessage />
         <TheSocials />
-        <TheFooter />
       </article>
+      <TheFooter />
     </v-main>
   </v-app>
 </template>

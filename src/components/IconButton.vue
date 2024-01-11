@@ -1,12 +1,23 @@
 <template>
-  <button class="button">
-    <img class="button__image" :src="iconFile" />
+  <a
+    v-bind="$attrs"
+    class="button"
+    @mouseover="hover = true"
+    @click="hover = true"
+    @mouseleave="hover = false"
+  >
+    <img
+      class="button__image"
+      :class="{ 'button__image--hovered': hover }"
+      :src="iconFile"
+    />
     <span class="button__text">{{ text }}</span>
-  </button>
+  </a>
 </template>
 
 <script lang="ts" setup>
 import * as icons from "@/assets/icons/index";
+import { ref } from "vue";
 
 const props = defineProps({
   text: {
@@ -18,6 +29,8 @@ const props = defineProps({
     required: true,
   },
 });
+
+const hover = ref(false);
 
 // @ts-expect-error
 const iconFile = icons[props.icon];
@@ -49,7 +62,7 @@ const iconFile = icons[props.icon];
   aspect-ratio: 1/1;
 }
 
-.button:hover .button__image {
+.button__image--hovered {
   margin-top: -32.5px;
 }
 </style>

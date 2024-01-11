@@ -10,3 +10,11 @@
     align-items: stretch;
     justify-content: space-around;
 }
+
+.container--xl {
+    height: 240px;
+}
+
+.container--fit {
+    height: fit-content;
+}

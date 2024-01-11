@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>minha stack principal é...</p>
+    <p>mas sei programar em...</p>
     <div class="buttons">
       <IconButton text="PHP" icon="php" />
       <IconButton text="JS/TS" icon="js" />
